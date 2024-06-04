@@ -1,0 +1,103 @@
+body {
+    background-image: url(fotos/tablebg.jpg);
+    /* bron: https://pixabay.com/illustrations/table-roses-flowers-cloth-8715422/ */
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4.5em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.vorm {
+    display: flex;
+    justify-content: center;
+}
+
+.knoppen p {
+    padding: 25px;
+    margin-bottom: 50px;
+    font-size: large;
+    border-style: solid;
+    border-radius: 40px;
+    text-align: center;
+    width: 200px;
+    height: 25px;
+    cursor: pointer;
+    border-width: 6px;
+}
+
+.knoppen {
+    margin-top: 75px;
+}
+
+#pepperoniknop {
+    background-color: rgb(162, 28, 28);
+    color: rgb(69, 8, 8);
+    border-color: rgb(81, 21, 21);
+}
+
+#mashroomknop {
+    background-color: rgb(216, 204, 192);
+    color: rgb(92, 79, 66);
+    border-color: rgb(132, 117, 103);
+}
+
+#oliveknop {
+    background-color: rgb(128, 128, 0);
+    color: rgb(41, 41, 5);
+    border-color: rgb(59, 59, 11);
+}
+
+/* foto boven foto bron: https://stackoverflow.com/questions/48474/how-do-i-position-one-image-on-top-of-another-in-html */
+.pizza {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 100px;
+}
+
+#basis {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 650px;
+    filter: brightness(80%);
+    filter: drop-shadow(7px 8px 9px #000000);
+}
+
+#pepperoni {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    z-index: 2;
+    max-width: 150px;
+    filter: drop-shadow(5px 6px 7px #525252);
+    opacity: 0%;
+}
+
+#mashroom {
+    position: absolute;
+    top: 250px;
+    left: 350px;
+    z-index: 2;
+    max-width: 200px;
+    filter: drop-shadow(5px 6px 7px #525252);
+    opacity: 0%;
+}
+
+#olive {
+    position: absolute;
+    top: 400px;
+    left: 250px;
+    z-index: 2;
+    max-width: 150px;
+    filter: drop-shadow(5px 6px 7px #525252);
+    opacity: 0%;
+}
